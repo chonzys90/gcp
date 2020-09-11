@@ -98,7 +98,33 @@ kubectl get services
 # Region us-central1
 # Zone us-central1-a
 
-
+# The following is an example of a Deployment manifest file in YAML format:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+        
+# To get detailed information about the Deployment, run the following command
+kubectl describe deployment [DEPLOYMENT_NAME]
+# To list the Pods created by the Deployment, run the following command:
+kubectl get pods -l [KEY]=[VALUE]
+# To view a Deployment's manifest, run the following command:
+kubectl get deployments [DEPLOYMENT_NAME] -o yaml
 # afeter reaching this point you should have bsome knowledg of how to work with GCP AND DEPLOY
 
 
