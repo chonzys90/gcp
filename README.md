@@ -45,8 +45,8 @@ sudo nano /var/www/html/index.nginx-debian.html
 # confirm that the web server is serving your new page. At the command prompt on my-vm-1, execute this command
 curl http://localhost/
 exit
-# Username
-# student-03-2042c26db66f@qwiklabs.net
+# please note that i used these mock details and have placed them here for referance sake. feel free to change according to your own requirements
+# Username student-03-2042c26db66f@qwiklabs.net
 # Password-5cTDLx69t2L2
 # GCP Project ID-qwiklabs-gcp-03-1e74f4b15791
 # Region us-central1
